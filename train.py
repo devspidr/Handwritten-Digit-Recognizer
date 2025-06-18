@@ -26,5 +26,6 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 model.fit(X_train, y_train, epochs=5, batch_size=64, validation_split=0.1)
 
 # Save the model
-model.save("saved_models/model.h5")
+model.save("saved_models/model.h5", save_format="h5")
+
 print("✅ Model trained and saved at: saved_models/model.h5")
